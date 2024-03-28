@@ -58,7 +58,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
     ref: main
-    src: https://github.com/QRCore-RedM-Re/PolyZone
+    src: https://github.com/RexShack/PolyZone
 
   - action: download_github
     dest: ./resources/[standalone]/pma-voice
