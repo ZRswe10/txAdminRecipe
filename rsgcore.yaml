@@ -124,12 +124,7 @@ tasks:
     src: https://github.com/Rexshack-RedM/rsg-appearance
     ref: main
     dest: ./resources/[framework]/rsg-appearance
-  
-  - action: download_github
-    src: https://github.com/Rexshack-RedM/rsg-pvp
-    ref: main
-    dest: ./resources/[framework]/rsg-pvp
-    
+
   - action: download_github
     src: https://github.com/Rexshack-RedM/rsg-wardrobe
     ref: main
