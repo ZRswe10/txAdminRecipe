@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS `telegrams` (
 
 CREATE TABLE IF NOT EXISTS `player_horses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `stable` varchar(50) NOT NULL,
   `citizenid` varchar(50) NOT NULL,
   `horseid` varchar(11) NOT NULL,
   `name` varchar(255) NOT NULL,
