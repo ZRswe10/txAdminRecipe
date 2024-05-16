@@ -145,3 +145,10 @@ INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('strlaw', 0, 'boss'),
 ('stdenlaw', 0, 'boss'),
 ('medic', 0, 'boss');
+
+CREATE TABLE IF NOT EXISTS `favorites_animations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `citizenid` varchar(50) NOT NULL,
+  `favorites` longtext DEFAULT ('[]') NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
