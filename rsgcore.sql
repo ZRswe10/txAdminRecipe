@@ -82,6 +82,7 @@ CREATE TABLE IF NOT EXISTS `player_horses` (
   `horseid` varchar(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `horse` varchar(50) DEFAULT NULL,
+  `dirt` int(11) DEFAULT 0,
   `horsexp` int(11) DEFAULT 0,
   `saddle` varchar(50) DEFAULT '0',
   `blanket` varchar(50) DEFAULT '0',
