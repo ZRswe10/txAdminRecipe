@@ -45,6 +45,13 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/files/ox_lib.zip
     
+  - action: download_file
+    path: ./tmp/files/jo_libs.zip
+    url: https://github.com/Jump-On-Studios/RedM-jo_libs/releases/latest/download/jo_libs.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/files/jo_libs.zip
+    
   - action: download_github
     dest: ./resources/[standalone]/connectqueue
     ref: main
