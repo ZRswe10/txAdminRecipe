@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `cid` int(11) DEFAULT NULL,
   `license` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
+  `outlawstatus` int(11) NOT NULL DEFAULT 0,
   `money` text NOT NULL,
   `charinfo` text DEFAULT NULL,
   `job` text NOT NULL,
