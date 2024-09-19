@@ -103,7 +103,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/fx-channel
     ref: main
-    src: https://github.com/Fixitfy/fx-channel
+    src: https://github.com/RexShack/fx-channel
         
   - action: waste_time # prevent github throttling
     seconds: 10
