@@ -51,6 +51,14 @@ CREATE TABLE IF NOT EXISTS `playeroutfit` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE IF NOT EXISTS `inventories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifier` varchar(255) NOT NULL,
+  `items` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (json_valid(`items`)),
+  PRIMARY KEY (`identifier`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 CREATE TABLE IF NOT EXISTS `stashitems` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `stash` varchar(255) NOT NULL DEFAULT '[]',
