@@ -59,17 +59,6 @@ CREATE TABLE IF NOT EXISTS `inventories` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE IF NOT EXISTS `stashitems` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `stash` varchar(255) NOT NULL DEFAULT '[]',
-  `items` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  PRIMARY KEY (`stash`),
-  KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-INSERT INTO `stashitems` (`stash`, `items`) VALUES
-('lawtrashcan', '[]');
-
 CREATE TABLE IF NOT EXISTS `telegrams` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `citizenid` varchar(255) NOT NULL,
