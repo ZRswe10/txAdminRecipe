@@ -283,6 +283,11 @@ tasks:
     dest: ./resources/[framework]/rsg-multijob
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-multijob
+    
+  - action: download_github
+    dest: ./resources/[framework]/rsg-consume
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-consume
 
   # Download Rexshack MapMod resources
 
