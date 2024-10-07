@@ -284,6 +284,11 @@ tasks:
     ref: main
     src: https://github.com/Rexshack-RedM/rsg-consume
 
+  - action: download_github
+    dest: ./resources/[framework]/rsg-fishing
+    ref: main
+    src: https://github.com/Rexshack-RedM/rsg-fishing
+
   # Download Rexshack MapMod resources
 
   - action: download_github
